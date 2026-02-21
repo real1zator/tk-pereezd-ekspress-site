@@ -1,0 +1,1604 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ТК Переезд Экспресс — Грузоперевозки в Калининград</title>
+  <meta name="description" content="Профессиональные грузоперевозки от ТК Переезд Экспресс в Калининград. Работаем 24/7.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --bg-dark: #2a2a2a;
+      --text: #2a2a2a;
+      --text-light: #6b6b6b;
+      --yellow: #ffd000;
+      --yellow-dark: #e6bb00;
+      --black: #1a1a1a;
+      --border: #ddd;
+      --shadow: 0 4px 15px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 40px rgba(0,0,0,0.15);
+      --font-display: 'Montserrat', 'Arial Black', sans-serif;
+      --font: 'Inter', 'Segoe UI', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* === HEADER === */
+    .header {
+      background: var(--yellow);
+      border-bottom: 4px solid var(--black);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .logo__icon {
+      width: 46px;
+      height: 46px;
+      background: var(--black);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--yellow);
+      font-size: 24px;
+      font-weight: 900;
+      font-family: var(--font-display);
+    }
+    .logo__text {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--black);
+      font-family: var(--font-display);
+      letter-spacing: 2px;
+    }
+    .nav {
+      display: flex;
+      gap: 32px;
+    }
+    .nav a {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--black);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: opacity 0.3s;
+    }
+    .nav a:hover { opacity: 0.7; }
+    .header__phone {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--black);
+      text-decoration: none;
+      font-family: var(--font-display);
+      letter-spacing: 1px;
+    }
+
+    /* === HERO === */
+    .hero {
+      padding: 100px 0;
+      background: transparent;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(0,0,0,0.03) 10px,
+        rgba(0,0,0,0.03) 20px
+      );
+      pointer-events: none;
+    }
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+    .hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(50px, 7vw, 90px);
+      font-weight: 400;
+      line-height: 0.95;
+      margin-bottom: 28px;
+      color: var(--black);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .hero__subtitle {
+      font-size: 18px;
+      color: var(--black);
+      margin-bottom: 40px;
+      line-height: 1.6;
+      font-weight: 500;
+      max-width: 700px;
+    }
+    .hero__features {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .hero__feature {
+      background: var(--black);
+      color: var(--yellow);
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 18px 42px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      cursor: pointer;
+      border: none;
+      letter-spacing: 1px;
+    }
+    .btn--yellow {
+      background: var(--black);
+      color: var(--yellow);
+    }
+    .btn--yellow:hover {
+      background: #000;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    /* === SERVICES === */
+    .services {
+      padding: 90px 0;
+      background: #fff;
+    }
+    .s-title {
+      margin-bottom: 60px;
+    }
+    .s-title__heading {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 5vw, 60px);
+      font-weight: 400;
+      margin-bottom: 16px;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .s-title__sub {
+      font-size: 16px;
+      color: var(--text-light);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .service-card {
+      background: var(--bg);
+      border: 3px solid var(--black);
+      border-radius: 0;
+      padding: 40px 32px;
+      text-align: center;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      right: -6px;
+      bottom: -6px;
+      background: var(--yellow);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .service-card:hover::before {
+      opacity: 1;
+    }
+    .service-card:hover {
+      transform: translate(-3px, -3px);
+    }
+    .service-card__icon {
+      font-size: 56px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .service-card__title {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 14px;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .service-card__text {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* === ADVANTAGES === */
+    .advantages {
+      padding: 90px 0;
+      background: var(--bg);
+    }
+    .advantages__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .advantages__image {
+      position: relative;
+      border: 5px solid var(--black);
+      overflow: hidden;
+    }
+    .advantages__image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .advantages__text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 4.5vw, 56px);
+      font-weight: 400;
+      margin-bottom: 24px;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .advantages__list {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    .advantages__list li {
+      padding: 14px 0;
+      border-bottom: 2px solid var(--border);
+      font-size: 15px;
+      color: var(--text);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .advantages__list li::before {
+      content: '▶';
+      color: var(--yellow);
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    /* === TYPES === */
+    .types {
+      padding: 90px 0;
+      background: #fff;
+    }
+    .types-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    .type-card {
+      background: var(--bg);
+      border: 3px solid var(--black);
+      padding: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .type-card:hover {
+      box-shadow: var(--shadow-lg);
+    }
+    .type-card__image {
+      height: 240px;
+      overflow: hidden;
+      border-bottom: 3px solid var(--black);
+    }
+    .type-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .type-card__content {
+      padding: 32px;
+    }
+    .type-card__title {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 14px;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .type-card__text {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .type-card__price {
+      font-family: var(--font-display);
+      font-size: 28px;
+      color: var(--black);
+      margin-bottom: 16px;
+    }
+
+    /* === CTA SECTION === */
+    .cta-section {
+      padding: 90px 0;
+      background: var(--black);
+      color: var(--yellow);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 20px,
+        rgba(255,208,0,0.05) 20px,
+        rgba(255,208,0,0.05) 40px
+      );
+    }
+    .cta-section__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .cta-section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 5.5vw, 70px);
+      font-weight: 400;
+      margin-bottom: 24px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .cta-section p {
+      font-size: 17px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+    .cta-section .btn {
+      background: var(--yellow);
+      color: var(--black);
+    }
+    .cta-section .btn:hover {
+      background: var(--yellow-dark);
+    }
+
+    /* === CONTACT FORM === */
+    .contact-form {
+      padding: 90px 0;
+      background: var(--bg);
+    }
+    .form-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border: 5px solid var(--black);
+      padding: 50px;
+    }
+    .form-wrapper input,
+    .form-wrapper textarea {
+      width: 100%;
+      padding: 16px 20px;
+      border: 3px solid var(--black);
+      border-radius: 0;
+      background: #fff;
+      color: var(--text);
+      font: inherit;
+      font-size: 14px;
+      margin-bottom: 20px;
+      transition: all 0.3s;
+    }
+    .form-wrapper input::placeholder,
+    .form-wrapper textarea::placeholder {
+      color: var(--text-light);
+    }
+    .form-wrapper input:focus,
+    .form-wrapper textarea:focus {
+      outline: none;
+      border-color: var(--yellow);
+      box-shadow: 0 0 0 3px rgba(255,208,0,0.2);
+    }
+    .form-wrapper textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .form-wrapper .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* === FOOTER === */
+    .footer {
+      background: var(--black);
+      color: rgba(255,255,255,0.7);
+      padding: 60px 0 30px;
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 40px;
+    }
+    .footer__logo {
+      font-family: var(--font-display);
+      font-size: 32px;
+      color: var(--yellow);
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+    .footer__desc {
+      font-size: 13px;
+      line-height: 1.8;
+    }
+    .footer__title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--yellow);
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    .footer__links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer__links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.3s;
+    }
+    .footer__links a:hover {
+      color: var(--yellow);
+    }
+    .footer__bottom {
+      padding-top: 30px;
+      border-top: 2px solid rgba(255,255,255,0.1);
+      text-align: center;
+      font-size: 12px;
+    }
+
+    /* === FLOATING / MOBILE === */
+    .sticky-call,
+    .sticky-tg {
+      position: fixed;
+      right: 22px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--black);
+      font-size: 26px;
+      z-index: 60;
+      transition: transform 0.3s;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+      border: 3px solid var(--black);
+    }
+    .sticky-call {
+      bottom: 96px;
+      background: var(--yellow);
+    }
+    .sticky-tg {
+      bottom: 28px;
+      background: var(--yellow);
+    }
+    .sticky-call:hover,
+    .sticky-tg:hover {
+      transform: scale(1.12) rotate(10deg);
+    }
+
+    .mobile-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 80;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      background: var(--yellow);
+      border-top: 4px solid var(--black);
+    }
+    .mobile-cta a {
+      text-align: center;
+      text-decoration: none;
+      font-weight: 900;
+      padding: 18px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .mobile-cta__call {
+      color: var(--yellow);
+      background: var(--black);
+      border-right: 2px solid var(--yellow);
+    }
+    .mobile-cta__lead {
+      color: var(--black);
+      background: var(--yellow);
+    }
+
+    /* === ANIMATIONS === */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22,1,0.36,1);
+    }
+    [data-animate].animated {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .advantages__content {
+        grid-template-columns: 1fr;
+      }
+      .types-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 700px) {
+      .nav {
+        display: none;
+      }
+      .hero__features {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .sticky-call,
+      .sticky-tg {
+        display: none;
+      }
+      .mobile-cta {
+        display: grid;
+      }
+      body {
+        padding-bottom: 70px;
+      }
+      .hero {
+        padding: 70px 0;
+      }
+      .form-wrapper {
+        padding: 36px 28px;
+      }
+      .footer__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+<style>
+
+/* ===== CARGO BRAND STRIP ===== */
+.cargo-brand-strip {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #111 0%, #1a1a1a 50%, #111 100%);
+  overflow: hidden;
+  line-height: 1;
+  padding: 0;
+  position: relative;
+  z-index: 99;
+  border-bottom: 3px solid rgba(255,200,0,0.7);
+}
+.cargo-brand-strip__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  width: 100%;
+}
+.cargo-brand-strip__text {
+  font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif;
+  font-size: clamp(36px, 5.5vw, 90px);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  line-height: 0.9;
+  background: linear-gradient(90deg, #ffd000 0%, #fff8e0 40%, #ffd000 60%, #ffaa00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  animation: gruz-shimmer 3s ease-in-out infinite;
+  background-size: 200% 100%;
+}
+@keyframes gruz-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ===== HERO TRUCK OVERLAY ===== */
+.cargo-hero-truck-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5) saturate(1.2);
+  transition: transform 8s ease-out;
+}
+.cargo-hero-truck-overlay.parallax-active {
+  transform: scale(1.06);
+}
+.hero, .hero-band+.hero, section.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== SCROLL-REVEAL ANIMATIONS ===== */
+[data-animate], [data-reveal] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate].animated, [data-reveal].animated {
+  opacity: 1;
+  transform: none;
+}
+[data-animate-left] {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate-left].animated { opacity: 1; transform: none; }
+[data-animate-right] {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate-right].animated { opacity: 1; transform: none; }
+[data-animate-scale] {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate-scale].animated { opacity: 1; transform: scale(1); }
+
+/* Staggered children */
+[data-animate]:nth-child(2) { transition-delay: 0.1s; }
+[data-animate]:nth-child(3) { transition-delay: 0.2s; }
+[data-animate]:nth-child(4) { transition-delay: 0.3s; }
+[data-animate]:nth-child(5) { transition-delay: 0.4s; }
+
+/* ===== FLOATING TRUCK SVG ===== */
+.truck-float-svg {
+  position: absolute;
+  right: -220px;
+  bottom: 0;
+  width: min(500px, 55vw);
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 1s 0.4s ease, transform 1.2s 0.4s ease;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+}
+.truck-float-svg.animated {
+  opacity: 0.92;
+  transform: translateX(0);
+  right: -40px;
+}
+
+/* ===== PULSE BUTTON ===== */
+.btn-pulse {
+  animation: btn-pulse-anim 2s ease-in-out infinite;
+}
+@keyframes btn-pulse-anim {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,208,0,0.5); }
+  50% { box-shadow: 0 0 0 16px rgba(255,208,0,0); }
+}
+
+/* ===== COUNTER ANIMATION ===== */
+.cargo-stat-num {
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+/* ===== PARTICLES ===== */
+.cargo-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.cargo-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255,208,0,0.6);
+  animation: particle-rise linear infinite;
+}
+@keyframes particle-rise {
+  0% { opacity: 0; transform: translateY(0) scale(1); }
+  20% { opacity: 1; }
+  80% { opacity: 0.5; }
+  100% { opacity: 0; transform: translateY(-120vh) scale(0.3); }
+}
+
+/* ===== ROAD LINE ANIMATION ===== */
+.cargo-road {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,208,0,0.8) 0px, rgba(255,208,0,0.8) 40px,
+    transparent 40px, transparent 80px
+  );
+  background-size: 80px 6px;
+  animation: road-move 1.2s linear infinite;
+  z-index: 3;
+}
+@keyframes road-move {
+  from { background-position: 0 0; }
+  to { background-position: -80px 0; }
+}
+
+/* ===== TELEGRAM FORM ===== */
+.cargo-tg-form-section {
+  padding: 70px 0;
+  background: linear-gradient(135deg, #111 0%, #1c1c1c 100%);
+  position: relative;
+  overflow: hidden;
+}
+.cargo-tg-form-section::before {
+  content: '🚚';
+  position: absolute;
+  font-size: 200px;
+  opacity: 0.04;
+  right: -20px;
+  bottom: -30px;
+  pointer-events: none;
+}
+.cargo-tg-form {
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,208,0,0.2);
+  border-radius: 12px;
+  padding: 40px;
+  backdrop-filter: blur(8px);
+}
+.cargo-tg-form__title {
+  font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #ffd000;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.cargo-tg-form__sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  margin-bottom: 28px;
+}
+.cargo-tg-form input,
+.cargo-tg-form select,
+.cargo-tg-form textarea {
+  display: block;
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,208,0,0.25);
+  color: #fff;
+  padding: 13px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: 12px;
+  transition: border-color 0.3s, background 0.3s;
+}
+.cargo-tg-form input:focus,
+.cargo-tg-form textarea:focus {
+  border-color: #ffd000;
+  background: rgba(255,208,0,0.07);
+}
+.cargo-tg-form input::placeholder,
+.cargo-tg-form textarea::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+.cargo-tg-form textarea { height: 90px; resize: vertical; }
+.cargo-tg-form__btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #ffd000, #ffaa00);
+  color: #111;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: btn-pulse-anim 2s ease-in-out infinite;
+  margin-top: 6px;
+  font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif;
+}
+.cargo-tg-form__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255,208,0,0.4);
+}
+.cargo-tg-form__success {
+  display: none;
+  text-align: center;
+  padding: 30px;
+  color: #4caf50;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+/* ===== MOBILE RESPONSIVE (injected by patcher) ===== */
+
+/* -- Общие мобильные фиксы -- */
+@media (max-width: 768px) {
+  html { font-size: 15px; }
+  .container { padding: 0 16px; }
+  section { padding: 50px 0 !important; }
+
+  /* -- HEADER -- */
+  .header__inner {
+    height: auto;
+    min-height: 56px;
+    padding: 8px 0;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .logo { gap: 8px; }
+  .logo__icon { width: 36px; height: 36px; font-size: 18px; }
+  .logo__text { font-size: 18px !important; letter-spacing: 1px; }
+  .header__phone {
+    font-size: 14px !important;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  .nav { display: none !important; }
+
+  /* -- BRAND STRIP -- */
+  .cargo-brand-strip__text {
+    font-size: clamp(28px, 8vw, 52px) !important;
+    letter-spacing: 0.02em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .cargo-brand-strip__inner { padding: 10px 0; }
+
+  /* -- HERO -- */
+  .hero {
+    padding: 0 !important;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .cargo-hero-truck-overlay {
+    filter: brightness(0.45) saturate(1.3) !important;
+  }
+  .hero__content { max-width: 100%; }
+  .hero__title {
+    font-size: clamp(32px, 9vw, 50px) !important;
+    letter-spacing: 1px;
+    line-height: 1.05 !important;
+    margin-bottom: 16px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .hero__subtitle {
+    font-size: 15px !important;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: rgba(255,255,255,0.92) !important;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+  .hero__features {
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-bottom: 24px;
+  }
+  .hero__feature {
+    font-size: 12px !important;
+    padding: 10px 16px !important;
+    text-align: center;
+  }
+  .btn {
+    padding: 14px 28px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* -- HERO TEXT COLOR FIX (for dark overlay) -- */
+  .hero .hero__title,
+  .hero .hero__content h1 {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+
+  /* -- SECTIONS -- */
+  .s-title__heading,
+  .section-title,
+  .section__title {
+    font-size: clamp(26px, 7vw, 40px) !important;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    word-break: break-word;
+  }
+
+  /* -- GRIDS -- */
+  .services-grid,
+  .types-grid,
+  .advantages__content,
+  .footer__grid,
+  .benefits-grid,
+  .pricing-grid,
+  .features-grid,
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* -- SERVICE CARDS -- */
+  .service-card, .svc-card, .pricing-card, .benefit-card, .feature-card {
+    padding: 28px 20px !important;
+  }
+  .service-card__title, .svc-card__title, .pricing-card__title {
+    font-size: 22px !important;
+  }
+  .service-card__icon { font-size: 42px !important; }
+
+  /* -- ADVANTAGES -- */
+  .advantages__image { order: -1; }
+  .advantages__text h2 {
+    font-size: clamp(28px, 7vw, 42px) !important;
+    line-height: 1.1;
+  }
+  .advantages__list li {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  /* -- TYPE CARDS -- */
+  .type-card__image { height: 200px; }
+  .type-card__content { padding: 24px 16px; }
+  .type-card__title { font-size: 24px !important; }
+  .type-card__price { font-size: 22px; }
+
+  /* -- CTA -- */
+  .cta-section h2 {
+    font-size: clamp(28px, 7vw, 44px) !important;
+    line-height: 1.1;
+  }
+  .cta-section p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .cta-section__content { max-width: 100%; padding: 0 8px; }
+
+  /* -- FORM -- */
+  .form-wrapper {
+    padding: 24px 16px !important;
+    border-width: 3px;
+  }
+  .form-wrapper input,
+  .form-wrapper textarea {
+    padding: 14px 16px;
+    font-size: 16px;
+    border-width: 2px;
+  }
+  .cargo-tg-form {
+    padding: 24px 16px !important;
+    margin: 0 -8px;
+  }
+  .cargo-tg-form__title { font-size: 26px !important; }
+  .cargo-tg-form__sub { font-size: 13px; }
+  .cargo-tg-form input,
+  .cargo-tg-form textarea {
+    font-size: 16px;
+    padding: 14px 14px;
+  }
+  .cargo-tg-form__btn {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  /* -- FOOTER -- */
+  .footer { padding: 40px 0 20px; }
+  .footer__logo { font-size: 24px !important; }
+  .footer__desc { font-size: 13px; }
+  .footer__grid { gap: 24px !important; }
+
+  /* -- FLOATING ELEMENTS -- */
+  .sticky-call, .sticky-tg { display: none !important; }
+  .mobile-cta {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mobile-cta a {
+    padding: 16px 8px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  body { padding-bottom: 60px !important; }
+
+  /* -- Stats -- */
+  .stat__num, .cargo-stat-num {
+    font-size: 32px !important;
+  }
+  .stat__label {
+    font-size: 12px !important;
+  }
+
+  /* -- MISC -- */
+  .truck-float-svg { display: none !important; }
+}
+
+/* -- Extra small screens (< 400px) -- */
+@media (max-width: 400px) {
+  .logo__text { font-size: 15px !important; }
+  .header__phone { font-size: 12px !important; }
+  .hero__title { font-size: 28px !important; }
+  .cargo-brand-strip__text { font-size: 24px !important; }
+  .s-title__heading { font-size: 24px !important; }
+  .service-card__title { font-size: 20px !important; }
+}
+
+/* -- Landscape phones -- */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero { min-height: 70vh; }
+}
+
+
+/* Hero gradient overlay for text readability */
+.cargo-hero-truck-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.1) 0%,
+    rgba(0,0,0,0.3) 40%,
+    rgba(0,0,0,0.5) 100%
+  );
+  pointer-events: none;
+}
+.hero .hero__title,
+.hero .hero__content h1 {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.3);
+}
+.hero .hero__subtitle {
+  color: rgba(255,255,255,0.92);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+.hero .hero__feature {
+  background: rgba(0,0,0,0.7);
+  color: #ffd000;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,208,0,0.3);
+}
+.hero .btn--yellow {
+  background: #ffd000;
+  color: #111;
+  border: none;
+}
+.hero .btn--yellow:hover {
+  background: #ffe040;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255,208,0,0.4);
+}
+
+
+/* Toast notification animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+  15% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  85% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo">
+      <div class="logo__icon">A</div>
+      <div class="logo__text">ТК Переезд Экспресс</div>
+    </a>
+    <nav class="nav">
+      <a href="#services">Услуги</a>
+      <a href="#advantages">О нас</a>
+      <a href="#types">Виды</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="tel:+79000000000" class="header__phone">+7 (900) 000-00-00</a>
+  </div>
+</header>
+
+<!-- CARGO BRAND STRIP -->
+<div class="cargo-brand-strip">
+  <div class="cargo-brand-strip__inner">
+    <span class="cargo-brand-strip__text">ГРУЗОПЕРЕВОЗКИ</span>
+  </div>
+</div>
+<!-- HERO -->
+<section class="hero" id="top">
+<div class="cargo-hero-truck-overlay" style="background-image:url('photo_1.jpg')" aria-hidden="true"></div>
+<div class="cargo-particles"></div>
+<div class="cargo-road"></div>
+
+
+
+  <div class="container">
+    <div class="hero__content" data-animate>
+      <h1 class="hero__title">ГРУЗОПЕРЕВОЗКИ<br>В КАЛИНИНГРАД</h1>
+      <p class="hero__subtitle">Профессиональная перевозка грузов любой сложности</p>
+      <div class="hero__features">✅ СОБСТВЕННЫЙ АВТОПАРК</div>
+        <div class="hero__feature">✅ СТРАХОВКА ДО 5 МЛН ₽</div>
+        <div class="hero__feature">✅ ВЫЕЗД ЧЕРЕЗ 30 МИНУТ</div>
+      </div>
+      <a href="#contacts" class="btn btn--yellow">ЗАКАЗАТЬ ▶</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="s-title" data-animate>
+      <h2 class="s-title__heading">НАШИ УСЛУГИ</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-animate>
+        <span class="service-card__icon">📋</span>
+        <h3 class="service-card__title">Грузоперевозки по городу</h3>
+        <p class="service-card__text">Перевозка мебели, стройматериалов и техники. Аккуратная погрузка, фиксированные цены.</p>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-card__icon">🎨</span>
+        <h3 class="service-card__title">Междугородние перевозки</h3>
+        <p class="service-card__text">Надёжная доставка грузов по всей России. GPS-мониторинг, страхование, точные сроки.</p>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-card__icon">🎯</span>
+        <h3 class="service-card__title">Квартирный переезд</h3>
+        <p class="service-card__text">Переезд под ключ: упаковка, погрузка, транспортировка, сборка мебели на новом месте.</p>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-card__icon">🖼️</span>
+        <h3 class="service-card__title">Услуги грузчиков</h3>
+        <p class="service-card__text">Опытные грузчики для погрузки и разгрузки. Бережное обращение с вещами.</p>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-card__icon">📐</span>
+        <h3 class="service-card__title">Перевозка спецтехники</h3>
+        <p class="service-card__text">Транспортировка оборудования, стройтехники и негабаритных грузов любой сложности.</p>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-card__icon">🏗️</span>
+        <h3 class="service-card__title">Офисный переезд</h3>
+        <p class="service-card__text">Быстрый переезд офиса с минимальным простоем. Упаковка документов и оргтехники.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="advantages" id="advantages">
+  <div class="container">
+    <div class="advantages__content">
+      <div class="advantages__image" data-animate>
+        <img src="photo_2.jpg" alt="О компании">
+      </div>
+      <div class="advantages__text" data-animate>
+        <h2>ПОЧЕМУ ВЫБИРАЮТ<br>ТК ПЕРЕЕЗД ЭКСПРЕСС</h2>
+        <ul class="advantages__list">
+          <li>Собственный автопарк: газели, 5-тонники, фуры</li>
+          <li>GPS-мониторинг каждого рейса в реальном времени</li>
+          <li>Полное страхование груза на стоимость перевозки</li>
+          <li>Фиксированная цена без скрытых доплат и переплат</li>
+          <li>Работаем 24/7 без выходных и праздников</li>
+        </ul>
+        <a href="#contacts" class="btn btn--yellow">УЗНАТЬ БОЛЬШЕ ▶</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPES -->
+<section class="types" id="types">
+  <div class="container">
+    <div class="s-title" data-animate>
+      <h2 class="s-title__heading">ВИДЫ ПЕРЕВОЗОК</h2>
+    </div>
+    <div class="types-grid">
+      <div class="type-card" data-animate>
+        <div class="type-card__image">
+          <img src="photo_3.jpg" alt="Городские перевозки">
+        </div>
+        <div class="type-card__content">
+          <h3 class="type-card__title">ГОРОДСКИЕ<br>ПЕРЕВОЗКИ</h3>
+          <p class="type-card__text">Оперативная доставка грузов по Калининграде и ближайшему Подмосковью. Работаем 24/7 без выходных.</p>
+          <div class="type-card__price">от 1,500₽/час</div>
+          <a href="#contacts" class="btn btn--yellow">ЗАКАЗАТЬ ▶</a>
+        </div>
+      </div>
+      <div class="type-card" data-animate>
+        <div class="type-card__image">
+          <img src="photo_4.jpg" alt="Междугородние">
+        </div>
+        <div class="type-card__content">
+          <h3 class="type-card__title">МЕЖДУГОРОДНИЕ<br>РЕЙСЫ</h3>
+          <p class="type-card__text">Доставка по всей России. Контроль на всех этапах. Страхование грузов. GPS-мониторинг в реальном времени.</p>
+          <div class="type-card__price">от 3,000₽/час</div>
+          <a href="#contacts" class="btn btn--yellow">ЗАКАЗАТЬ ▶</a>
+        </div>
+      </div>
+      <div class="type-card" data-animate>
+        <div class="type-card__image">
+          <img src="photo_5.jpg" alt="Спецтехника">
+        </div>
+        <div class="type-card__content">
+          <h3 class="type-card__title">СПЕЦТЕХНИКА</h3>
+          <p class="type-card__text">Манипуляторы, краны, эвакуаторы, фуры с гидробортом. Опытные операторы и водители с большим стажем.</p>
+          <div class="type-card__price">от 2,500₽/час</div>
+          <a href="#contacts" class="btn btn--yellow">ЗАКАЗАТЬ ▶</a>
+        </div>
+      </div>
+      <div class="type-card" data-animate>
+        <div class="type-card__image">
+          <img src="photo_6.jpg" alt="Складские услуги">
+        </div>
+        <div class="type-card__content">
+          <h3 class="type-card__title">СКЛАДСКИЕ<br>УСЛУГИ</h3>
+          <p class="type-card__text">Хранение, упаковка, комплектация, маркировка. Современные склады класса А с видеонаблюдением 24/7.</p>
+          <div class="type-card__price">от 1,800₽/м³</div>
+          <a href="#contacts" class="btn btn--yellow">ЗАКАЗАТЬ ▶</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-section__content" data-animate>
+      <h2>ЗАКАЖИТЕ ПЕРЕВОЗКУ<br>ПРЯМО СЕЙЧАС</h2>
+      <p>Оставьте заявку — и мы рассчитаем стоимость за 5 минут. Бесплатный выезд оценщика в Калининград. Страховка, GPS, опытные грузчики — всё включено.</p>
+      <a href="#contacts" class="btn">ЗАКАЗАТЬ ▶</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-form" id="contacts">
+  <div class="container">
+    <div class="s-title" data-animate>
+      <h2 class="s-title__heading">СВЯЖИТЕСЬ С НАМИ</h2>
+      <p class="s-title__sub">Ответим в течение 15 минут</p>
+    </div>
+    <div class="form-wrapper" data-animate>
+      <form class="js-form" data-bot-token="8434584674:AAGvxeQulQDyaESBQeu7rF5siC6HHs2McrE" data-chat-id="549333404">
+        <input name="name" placeholder="Ваше имя" required>
+        <input name="phone" placeholder="телефон" required>
+        <input name="cargo" placeholder="Тип груза">
+        <textarea name="message" placeholder="Опишите задачу"></textarea>
+        <button type="submit" class="btn btn--yellow">ОТПРАВИТЬ ЗАЯВКУ ▶</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<!-- ===== TELEGRAM FORM (без PHP, для GitHub Pages) ===== -->
+<section class="cargo-tg-form-section" id="cargo-zayavka">
+  <div class="container" style="max-width:1200px;margin:0 auto;padding:0 24px;">
+    <form class="cargo-tg-form" data-bot-token="8434584674:AAGvxeQulQDyaESBQeu7rF5siC6HHs2McrE" data-chat-id="549333404" autocomplete="off">
+      <div class="cargo-tg-form__title">ОСТАВИТЬ ЗАЯВКУ</div>
+      <div class="cargo-tg-form__sub">Ответим в течение 15 минут · Бесплатный выезд на замер</div>
+      <input name="name" type="text" placeholder="Ваше имя" required>
+      <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+      <input name="cargo" type="text" placeholder="Что перевозите? (груз, объём)">
+      <input name="route" type="text" placeholder="Маршрут (откуда — куда)">
+      <textarea name="message" placeholder="Дополнительные пожелания..."></textarea>
+      <button type="submit" class="cargo-tg-form__btn">📲 ОТПРАВИТЬ В TELEGRAM</button>
+      <div class="cargo-tg-form__success">✅ Заявка отправлена! Ожидайте звонка.</div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">ТК Переезд Экспресс</div>
+        <div class="footer__desc">Профессиональные грузоперевозки в Калининград. Работаем с 2015 года.</div>
+      </div>
+      <div>
+        <div class="footer__title">Услуги</div>
+        <div class="footer__links">
+          <a href="#">Городские</a>
+          <a href="#">Междугородние</a>
+          <a href="#">Склад</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__title">Компания</div>
+        <div class="footer__links">
+          <a href="#">О нас</a>
+          <a href="#">Парк техники</a>
+          <a href="#">Контакты</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__title">Контакты</div>
+        <div class="footer__links">
+          <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+          <a href="mailto:info@info.ru">info@ТК Переезд Экспресс.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      © 2026 ТК Переезд Экспресс. Все права защищены.
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<a class="sticky-call" href="tel:+79000000000">📞</a>
+<a class="sticky-tg" href="https://t.me/+79000000000">✈️</a>
+<div class="mobile-cta">
+  <a class="mobile-cta__call" href="tel:+79000000000">ПОЗВОНИТЬ</a>
+  <a class="mobile-cta__lead" href="#contacts">ЗАЯВКА</a>
+</div>
+
+<script>
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animated');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+// Telegram form
+for (const form of document.querySelectorAll('.js-form')) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const fd = new FormData(form);
+    const msg = [
+      '🚚 Новая заявка с сайта',
+      '',
+      'Имя: ' + (fd.get('name') || ''),
+      'Телефон: ' + (fd.get('phone') || ''),
+      'Груз: ' + (fd.get('cargo') || ''),
+      'Сообщение: ' + (fd.get('message') || '')
+    ].join('\n');
+    try {
+      const res = await fetch('https://api.telegram.org/bot' + form.dataset.botToken + '/sendMessage', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ chat_id: 549333404, text: msg })
+      });
+      if (!res.ok) throw new Error();
+      (function(){var _n=document.createElement('div');_n.textContent='Заявка отправлена! Перезвоним в течение 15 минут.';_n.style.cssText='position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#4caf50;color:#fff;padding:16px 32px;border-radius:8px;z-index:9999;font-size:16px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.3);animation:fadeInOut 3s forwards';document.body.appendChild(_n);setTimeout(function(){_n.remove()},3500)})();
+      form.reset();
+    } catch {
+      (function(){var _n=document.createElement('div');_n.textContent='Не удалось отправить. Позвоните нам напрямую.';_n.style.cssText='position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#f44336;color:#fff;padding:16px 32px;border-radius:8px;z-index:9999;font-size:16px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.3);animation:fadeInOut 3s forwards';document.body.appendChild(_n);setTimeout(function(){_n.remove()},4000)})();
+    }
+  });
+}
+</script>
+
+<script>
+(function(){
+  // ===== SCROLL REVEAL =====
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('[data-animate],[data-reveal],[data-animate-left],[data-animate-right],[data-animate-scale]')
+    .forEach(el => revealObs.observe(el));
+
+  // ===== PARALLAX TRUCK =====
+  const truckOverlay = document.querySelector('.cargo-hero-truck-overlay');
+  if (truckOverlay) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      truckOverlay.style.transform = 'scale(1.06) translateY(' + (scrolled * 0.15) + 'px)';
+    }, {passive: true});
+    setTimeout(() => truckOverlay.classList.add('parallax-active'), 300);
+  }
+
+  // ===== ANIMATED COUNTERS =====
+  function animCounter(el, target, duration) {
+    let start = 0;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) { start = target; clearInterval(timer); }
+      el.textContent = Math.round(start).toLocaleString('ru') + (el.dataset.suffix || '');
+    }, 16);
+  }
+  const cntObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        if (!el.dataset.counted) {
+          el.dataset.counted = '1';
+          animCounter(el, parseInt(el.dataset.target, 10), 1400);
+        }
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-target]').forEach(el => cntObs.observe(el));
+
+  // ===== PARTICLES =====
+  const particleContainers = document.querySelectorAll('.cargo-particles');
+  particleContainers.forEach(container => {
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('span');
+      p.className = 'cargo-particle';
+      p.style.cssText = [
+        'left:' + (Math.random()*100) + '%',
+        'bottom:' + (Math.random()*30) + 'px',
+        'width:' + (2 + Math.random()*4) + 'px',
+        'height:' + (2 + Math.random()*4) + 'px',
+        'animation-duration:' + (4 + Math.random()*8) + 's',
+        'animation-delay:' + (Math.random()*6) + 's',
+        'opacity:' + (0.3 + Math.random()*0.5)
+      ].join(';');
+      container.appendChild(p);
+    }
+  });
+
+  // ===== TELEGRAM FORM =====
+  document.querySelectorAll('.cargo-tg-form[data-bot-token]').forEach(form => {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('.cargo-tg-form__btn');
+      const success = form.querySelector('.cargo-tg-form__success');
+      const fields = form.querySelectorAll('input,textarea,select');
+      btn.disabled = true;
+      btn.textContent = 'ОТПРАВЛЯЕМ...';
+      const lines = ['\uD83D\uDE9A Новая заявка с сайта ГРУЗОПЕРЕВОЗКИ', ''];
+      fields.forEach(f => {
+        if (f.name && f.value) {
+          const labels = {name:'Имя',phone:'Телефон',cargo:'Груз',route:'Маршрут',date:'Дата',message:'Сообщение',weight:'Вес'};
+          lines.push((labels[f.name] || f.name) + ': ' + f.value);
+        }
+      });
+      lines.push('', '\uD83D\uDCCD Сайт: ' + window.location.hostname);
+      try {
+        const res = await fetch('https://api.telegram.org/bot' + form.dataset.botToken + '/sendMessage', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({chat_id: 549333404, text: lines.join('\n'), parse_mode: 'HTML'})
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        if (success) { success.style.display = 'block'; }
+        fields.forEach(f => { if (f.tagName !== 'SELECT') f.value = ''; });
+        btn.textContent = '✅ ОТПРАВЛЕНО!';
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.textContent = 'ОТПРАВИТЬ ЗАЯВКУ';
+          if (success) success.style.display = 'none';
+        }, 4000);
+      } catch(err) {
+        btn.disabled = false;
+        btn.textContent = 'ОТПРАВИТЬ ЗАЯВКУ';
+        (function(){var _n=document.createElement('div');_n.textContent='Ошибка отправки. Позвоните нам напрямую.';_n.style.cssText='position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#f44336;color:#fff;padding:16px 32px;border-radius:8px;z-index:9999;font-size:16px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.3);animation:fadeInOut 3s forwards';document.body.appendChild(_n);setTimeout(function(){_n.remove()},4000)})();
+      }
+    });
+  });
+
+  // ===== OLD FORM SUPPORT (если есть .js-form) =====
+  document.querySelectorAll('.js-form').forEach(form => {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const token = form.dataset.botToken || '8434584674:AAGvxeQulQDyaESBQeu7rF5siC6HHs2McrE';
+      const chatId = form.dataset.chatId || '549333404';
+      const msg = ['\uD83D\uDE9A Заявка с сайта ГРУЗОПЕРЕВОЗКИ','',
+        '\uD83D\uDC64 Имя: ' + (fd.get('name')||''),
+        '\uD83D\uDCF1 Телефон: ' + (fd.get('phone')||''),
+        '\uD83D\uDCE6 Груз: ' + (fd.get('cargo')||''),
+        '\uD83D\uDCDD Сообщение: ' + (fd.get('message')||''),
+        '\uD83C\uDF10 Сайт: ' + window.location.hostname
+      ].join('\n');
+      try {
+        const res = await fetch('https://api.telegram.org/bot' + token + '/sendMessage', {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({chat_id: 549333404, text: msg})
+        });
+        if (!res.ok) throw new Error();
+        (function(){var _n=document.createElement('div');_n.textContent='\u2705 Заявка отправлена! Перезвоним в течение 15 минут.';_n.style.cssText='position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#4caf50;color:#fff;padding:16px 32px;border-radius:8px;z-index:9999;font-size:16px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.3);animation:fadeInOut 3s forwards';document.body.appendChild(_n);setTimeout(function(){_n.remove()},3500)})();
+        form.reset();
+      } catch {
+        (function(){var _n=document.createElement('div');_n.textContent='Ошибка отправки. Позвоните нам напрямую.';_n.style.cssText='position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#f44336;color:#fff;padding:16px 32px;border-radius:8px;z-index:9999;font-size:16px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.3);animation:fadeInOut 3s forwards';document.body.appendChild(_n);setTimeout(function(){_n.remove()},4000)})();
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
